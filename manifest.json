@@ -9,7 +9,7 @@
   "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": ["*://localhost/*/recovery_code*", "*://login.gov/*/recovery_code*"],
+      "matches": ["*://localhost/*/recovery_code*", "*://*.login.gov/*/recovery_code*"],
       "js": ["content.js"]
     }
   ]

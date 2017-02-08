@@ -1,4 +1,4 @@
-chrome.storage.sync.get({recoveryCode: true}, function(items) {
+chrome.storage.sync.get('recoveryCode', function(items) {
   if (items.recoveryCode) {
     var words = [].slice.call(document.querySelectorAll('[data-recovery=word]'));
     var form = document.getElementById('confirm-key');
